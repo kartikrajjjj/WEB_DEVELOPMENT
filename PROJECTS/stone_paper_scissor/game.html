@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPS GAME</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-size: 25px;
+        border: solid;
+      }
+      .button {
+        margin: 30px;
+        background-color: black;
+        color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>STONE PAPER SCISSOR GAME</h1>
+    <button
+      id="stone"
+      class="button"
+      onclick="
+    let userChoice='stone';
+    let computerChoice='';
+    let randomNumber=Math.random() *3;
+    if(randomNumber>=0 && randomNumber<=1){
+        computerChoice='stone';
+        document.querySelector('#choices').innerText='User: STONE | Computer Choice: STONE';
+        document.querySelector('#result').innerText='DRAW';
+    }
+    else if(randomNumber>1 && randomNumber<=2){
+        computerChoice='paper';
+        document.querySelector('#choices').innerText='User: STONE | Computer Choice: PAPER';
+        document.querySelector('#result').innerText='COMPUTER WON';
+    }
+    else{
+        computerChoice='scissor';
+        document.querySelector('#choices').innerText='User: STONE | Computer Choice: SCISSOR';
+        document.querySelector('#result').innerText='YOU WON';
+    }
+    "
+    >
+      STONE
+    </button>
+    <button
+      id="paper"
+      class="button"
+      onclick="
+    userChoice='paper';
+    computerChoice='';
+    randomNumber=Math.random() *3;
+    if(randomNumber>0 && randomNumber<=1){
+        computerChoice='stone';
+        document.querySelector('#choices').innerText='User: PAPER | Computer Choice: STONE';
+        document.querySelector('#result').innerText='YOU WON';
+    }
+    else if(randomNumber>1 && randomNumber<=2){
+        computerChoice='paper';
+        document.querySelector('#choices').innerText='User: PAPER | Computer Choice: PAPER';
+        document.querySelector('#result').innerText='DRAW';
+    }
+    else{
+        computerChoice='scissor';
+        document.querySelector('#choices').innerText='User: PAPER | Computer Choice: SCISSOR';
+        document.querySelector('#result').innerText='COMPUTER WON';
+    }
+    "
+    >
+      PAPER
+    </button>
+    <button
+      id="scissor"
+      class="button"
+      onclick="
+    userChoice='scissor';
+    computerChoice='';
+    randomNumber=Math.random() *3;
+    if(randomNumber>0 && randomNumber<=1){
+        computerChoice='stone';
+        document.querySelector('#choices').innerText='User: SCISSOR | Computer Choice: STONE';
+        document.querySelector('#result').innerText='COMPUTER WON';
+    }
+    else if(randomNumber>1 && randomNumber<=2){
+        computerChoice='paper';
+        document.querySelector('#choices').innerText='User: SCISSOR | Computer Choice: PAPER';
+        document.querySelector('#result').innerText='YOU WON';
+        console.log('USER CHOICE: '+ userChoice);
+        console.log('COMPUTER CHOICE: '+ computerChoice);
+        console.log('YOU WON');
+    }
+    else{
+        computerChoice='scissor';
+        document.querySelector('#choices').innerText='User: SCISSOR | Computer Choice: SSISSOR';
+        document.querySelector('#result').innerText='DRAW';
+    }
+    "
+    >
+      SCISSOR
+    </button>
+
+    <p id="choices"> </p>
+    <p id="result"> </p>
+
+    <script src="game.js"></script>
+  </body>
+</html>

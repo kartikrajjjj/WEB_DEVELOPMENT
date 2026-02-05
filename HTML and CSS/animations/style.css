@@ -1,0 +1,48 @@
+body{
+    background-color: bisque;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+#container{
+    margin: 50px;
+    background-color: burlywood;
+    height: 150px;
+    width: 600px;
+    border: solid;
+    border-radius: 2cap;
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+.box{
+    background-color: aquamarine;
+    height: 100px;
+    width: 100px;
+    border: solid;
+    margin: 10px;
+    border-radius: 2cap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 3s ease-in-out;
+    animation: moveBox 2s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
+
+}
+#box2{
+    animation-delay: 1s;
+}
+#container:hover{
+    transform: translateY(50px);
+}
+
+@keyframes moveBox{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(290px);
+    }
+}

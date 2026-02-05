@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(242, 242, 134);
+}
+#button {
+  height: 30px;
+  width: 150px;
+  background-color: rgb(55, 231, 64);
+  border: 2px solid black;
+  border-radius: 10%;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+#button:hover {
+  height: 35px;
+  width: 170px;
+  background-color: coral;
+  border: 2px solid black;
+  border-radius: 10%;
+}
+#button:active {
+  height: 35px;
+  width: 170px;
+  background-color: rgb(173, 56, 13);
+  border: 2px solid black;
+  border-radius: 10%;
+}
+
+#button2 {
+  height: 30px;
+  width: 150px;
+  background-color: rgb(55, 205, 231);
+  border: 2px solid black;
+  border-radius: 10%;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function:steps(3);
+  transition-delay: 0s;
+}
+#button2:hover {
+  height: 35px;
+  width: 170px;
+  background-color: coral;
+  border: 2px solid black;
+  border-radius: 10%;
+}
+#button2:active {
+  height: 35px;
+  width: 170px;
+  background-color: rgb(173, 56, 13);
+  border: 2px solid black;
+  border-radius: 10%;
+}
+
+#image{
+    height: 250px;
+    width: 220px;
+    position: absolute;
+    top: 320px;
+    left: 100px;
+    border: solid;
+    transition: all 1s ease-in-out 0s;
+}
+#image:hover{
+    height: 250px;
+    width: 250px;
+    top: 300px;
+    left: 100px;
+    border: solid red;
+}

@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    background-color: aquamarine;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+}
+#box1{
+    position: static;
+}
+#box2{
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+#box3{
+    position: absolute;
+    top: 500px;
+    left:300px;
+}
+#box4{
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}

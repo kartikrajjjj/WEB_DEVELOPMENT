@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration: solid;
+}
+*{
+    background-color: rgb(201, 170, 170);
+    margin: 0;
+    border: 0;
+}
+#box{
+    height: 200px;
+    width: 200px;
+    background-color: indianred;
+}
+@media screen and (min-width: 300px) and (max-width: 400px){
+    #box{
+        height: 150px;
+        width: 100px;
+        border: 5px solid red;
+        background-color: aqua;
+    }
+}

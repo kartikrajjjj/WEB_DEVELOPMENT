@@ -1,0 +1,29 @@
+#calculator{
+    margin-left: 50px;
+    margin-top: 30px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#calculator{
+    border: 2px solid gray;
+    width: 195px;
+}
+#textbox{
+    height: 40px;
+    width: 180px;
+    margin: 8px;
+    font-size: medium;
+}
+#button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.button{
+    height: 50px;
+    width: 50px;
+    margin: 1px;
+}

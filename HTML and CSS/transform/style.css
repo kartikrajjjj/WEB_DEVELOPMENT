@@ -1,0 +1,62 @@
+body {
+  background-color: rgb(236, 242, 74);
+  perspective: 600px;
+}
+h1 {
+  text-decoration: underline solid ;
+  text-align: center;
+  
+}
+.box {
+  height: 120px;
+  width: 120px;
+  border: 2px solid;
+  margin-left: 30px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20%;
+  transition: transform 1s ease-in-out, background-color 1s;
+  transform-style: preserve-3d;
+  background-color: rgb(227, 233, 163);
+}
+.box:hover {
+  cursor: pointer;
+}
+#container {
+  display: flex;
+  flex-wrap: wrap;
+}
+#box1:hover {
+  transform: rotateX(45deg);
+  background-color: rgb(156, 114, 114);
+}
+#box2:hover {
+  transform: rotateY(45deg);
+  background-color: rgb(156, 114, 114);
+}
+#box3:hover {
+  transform: rotateZ(45deg);
+  background-color: rgb(156, 114, 114);
+}
+#box4:hover {
+  transform: scale(1.5);
+  background-color: rgb(156, 114, 114);
+}
+#box5:hover {
+  transform: scaleX(1.5);
+  background-color: rgb(156, 114, 114);
+}
+#box6:hover {
+  transform: scaleY(1.5);
+  background-color: rgb(156, 114, 114);
+}
+#box7:hover {
+  transform:translate(-50px);
+  background-color: rgb(156, 114, 114);
+}
+#box8:hover {
+  transform:translate(-50px, 50px);
+  background-color: rgb(156, 114, 114);
+}

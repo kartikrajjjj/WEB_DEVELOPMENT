@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#button1{
+    background-color: rgb(143, 233, 9);
+    border-radius: 15px;
+    width: 100px;
+    height: 33px;
+}
+#button2{
+    background-color: #ffffff;
+    border-radius: 20px ;
+    width: 150px;
+    height: 33px;
+    border: solid;
+}
