@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Set Timeout</h1>
+    <p>Open inspect -> console for outputs<br></p>
+    <script>
+        let alarm = function(){
+            console.log('wake up!.');
+        }
+        
+        //timer ID
+        let first=setTimeout(alarm,10000); //10000 milli-seconds i.e. 10 seconds
+        console.log(`alarm set with timerID: ${first}`);
+
+        //clear Timeout
+        let second=setTimeout(function(){
+            console.log('way2:wake up.');
+        },12000);
+        clearTimeout(second);
+
+        //way 3 using arrow function
+        setTimeout(() => {
+            console.log('way3:wake up.');
+        },14000);
+
+
+    </script>
+</body>
+</html>
